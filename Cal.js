@@ -11,7 +11,7 @@ function back() {
     document.querySelector("").innerHTML = tela.substring(0, tela.length - 1);
 }
 
-function somar{
+function somar() {
     let tela = document.querySelector(".tela").innerHTML;
     if(tela){
         document.querySelector(".tela").innerHTML = eval(tela);
