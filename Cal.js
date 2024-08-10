@@ -1,7 +1,7 @@
 function inserir(num){
     tela = document.querySelector(".tela")
 
-    // verifica se valor existente na tela é 0, para evitar que o zero fique à esquerda
+    // verifica se valor existente na tela é 0 para evitar que o zero fique à esquerda
     if(tela.innerHTML == 0) {
         tela.innerHTML = num;
     } else {
