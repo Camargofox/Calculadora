@@ -1,5 +1,12 @@
-function inserir(num) {
-    document.querySelector(".tela").innerHTML += num;
+function inserir(num){
+    tela = document.querySelector(".tela")
+
+    // verifica se valor existente na tela é 0 para evitar que o zero fique à esquerda
+    if(tela.innerHTML == 0) {
+        tela.innerHTML = num;
+    } else {
+        tela.innerHTML += num;
+    }
 }
 
 function clean () {
@@ -8,7 +15,7 @@ function clean () {
 
 function back() {
     let tela = document.querySelector(".tela").innerHTML;
-    document.querySelector("").innerHTML = tela.substring(0, tela.length - 1);
+    document.querySelector(".tela").innerHTML = tela.substring(0, tela.length - 1);
 }
 
 function somar() {
